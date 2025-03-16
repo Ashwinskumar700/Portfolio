@@ -1,0 +1,36 @@
+{
+    "name": "My Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "/static/icons/icon192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/static/icons/icon512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/static/icons/Screenshot.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/static/icons/Screenshot2.png",
+        "sizes": "720x1280",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ]
+  }
+  

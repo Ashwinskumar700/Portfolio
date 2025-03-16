@@ -1,0 +1,29 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="card">
+                    {% if project.image %}
+                    <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        {% if project.link %}
+                        <a href="{{ project.link }}" class="btn btn-primary" target="_blank">View Project</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="text-center">No projects added yet!</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

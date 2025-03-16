@@ -1,0 +1,197 @@
+
+.parallax {
+    background-image: url('/static/images/bg.jpg'); /* Add your background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+/* Light Mode (Default) */
+body {
+    background-color: #f9f9f9;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #1e90ff;
+}
+
+.dark-mode .header-title {
+    color: #ffcc00;
+}
+
+.dark-mode .header-subtitle {
+    color: #ddd;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1c1c1c;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #ffcc00 !important;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Home Section Styling */
+.home-section {
+    background: url('../images/bg.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Default text color */
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    color: #ffcc00; /* Keep the main title highlighted */
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #000000; /* Set to black */
+}
+
+.intro .highlight {
+    color: #ffcc00; /* Highlighted text */
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #000000; /* Change text color to black */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #1c1c1c;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e0b800;
+    border-color: #e0b800;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #ffcc00; /* Changed to recent color */
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e0b800; /* Slightly darker yellow for hover effect */
+}
+
+/* Header Title Styling */
+.header-title {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem; /* Reduced font size */
+    font-weight: bold;
+}
+
+/* Subtitle Styling */
+.header-subtitle {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: bold;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #ddd;
+}
+
+.dark-mode .toggle-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .toggle-btn:hover {
+    background-color: #555;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.home-page footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.non-home-page footer {
+    position: fixed;
+    bottom: 0;
+}
+

@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="home" class="home-section">
+    <div class="container text-center">
+        <div class="intro">
+            <h1 class="display-3 fw-bold">Welcome to My Portfolio</h1>
+            <button id="theme-toggle" class="toggle-btn">🌙</button>
+            <h1 class="header-title">Hi, I'm <span>ASHWIN S KUMAR</span></h1>
+            <p class="header-subtitle">
+                A passionate <span>Web Developer</span> with expertise in Python, Django, AI, and Full-Stack Web Development.
+            </p>
+            <a href="{% url 'projects' %}" class="btn btn-primary btn-lg">View My Work</a>
+            <div class="social-links mt-4">
+                <a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ashwin-s-kumar-22a1b726a" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:ashwinskumar357@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
